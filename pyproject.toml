@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pals-smbc-image-tool"
+version = "0.1.0"
+description = "Process and compare PALS sMBC Typhoon image-plate data."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pandas",
+    "openpyxl",
+    "matplotlib",
+    "opencv-python",
+    "scipy",
+]
+
+[project.scripts]
+smbc-image-tool = "smbc_image_tool:main"
+
+[tool.setuptools]
+py-modules = ["smbc_image_tool"]
