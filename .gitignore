@@ -10,6 +10,7 @@ env/
 .DS_Store
 .idea/
 .vscode/
+AGENTS.md
 
 .pytest_cache/
 .mypy_cache/
